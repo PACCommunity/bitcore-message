@@ -1,16 +1,18 @@
 {
-  "name": "bitcore-message",
-  "main": "./bitcore-message.min.js",
+  "name": "bitcore-message-pac",
+  "main": "./bitcore-message-pac.min.js",
   "version": "1.0.3",
-  "homepage": "https://github.com/bitpay/bitcore-message",
+  "homepage": "https://github.com/PACCommunity/bitcore-message-pac",
   "authors": [
     "BitPay"
   ],
-  "description": "Bitcoin Message Verification and Signing for Bitcore",
+  "description": "PAC Message Verification and Signing for Bitcore-PAC",
   "moduleType": [
     "globals"
   ],
   "keywords": [
+    "pac",
+    "paccoin",
     "bitcoin",
     "bitcore",
     "btc",
