@@ -11,11 +11,11 @@ var Message = require('../');
 
 describe('Message', function() {
 
-  var address = 'n1ZCYg9YXtB5XCZazLxSmPDa8iwJRZHhGx';
-  var badAddress = 'mmRcrB5fTwgxaFJmVLNtaG8SV454y1E3kC';
-  var privateKey = bitcore.PrivateKey.fromWIF('cPBn5A4ikZvBTQ8D7NnvHZYCAxzDZ5Z2TSGW2LkyPiLxqYaJPBW4');
+  var address = 'qUkSiJvjyUSdqzNVucqqo772qXuDTSZwQ9';
+  var badAddress = 'qPyiEkahes8nZSS2qbhGXCrfZpMeu2Ajre';
+  var privateKey = bitcore.PrivateKey.fromWIF('cSPGgk9xaL6b2HTEP4eok6ofKsSfuEaJ2AZfEDkG893WkqvVrriP');
   var text = 'hello, world';
-  var signatureString = 'H/DIn8uA1scAuKLlCx+/9LnAcJtwQQ0PmcPrJUq90aboLv3fH5fFvY+vmbfOSFEtGarznYli6ShPr9RXwY9UrIY=';
+  var signatureString = 'IM8VMj4syDmFX5a08QWF2RkwAmVQlqMZZnqwYhhkaqKhTwx7/CnYOaiq4aog/Ky3iA4R7u37U+57PGG9Cb1Hg5s=';
 
   var badSignatureString = 'H69qZ4mbZCcvXk7CWjptD5ypnYVLvQ3eMXLM8+1gX21SLH/GaFnAjQrDn37+TDw79i9zHhbiMMwhtvTwnPigZ6k=';
 
@@ -101,7 +101,7 @@ describe('Message', function() {
   });
 
   it('will verify with an uncompressed pubkey', function() {
-    var privateKey = new bitcore.PrivateKey('5KYZdUEo39z3FPrtuX2QbbwGnNP5zTd7yyr2SC1j299sBCnWjss');
+    var privateKey = new bitcore.PrivateKey('7s4yW5CjJz9XzJhtTbkcBCtoL8emx27py4jSt2wKQzqJ6SVVzxA');
     var message = new Message('This is an example of a signed message.');
     var signature = message.sign(privateKey);
     var verified = message.verify(privateKey.toAddress(), signature);
